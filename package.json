@@ -1,8 +1,8 @@
 {
-	"name": "liquid-loader",
+	"name": "liquid-loader-fork",
 	"author": "Alexander Medkov <azeeson@gmail.com>",
 	"description": "Liquid template engine for Webpack loader.",
-	"version": "0.2.0",
+	"version": "0.2.2",
 	"license": "MIT",
 	"homepage": "https://github.com/azeeson/liquid-loader",
 	"bugs": "https://github.com/azeeson/liquid-loader/issues",

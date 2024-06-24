@@ -36,6 +36,27 @@ module.exports = function(content) {
 	if (typeof config.filters === 'object') {
 		Engine.registerFilters(config.filters);
 	}
+	
+	// 添加标签
+  class MyForm extends Liquid.Tag {
+    render () { return '<form action="#/123">' }
+  }
+
+  class MyEndform extends Liquid.Tag {
+    render () { return '</form>' }
+  }
+  class MySchema extends Liquid.Tag {
+    render () { return '<div> <!-- ' }
+  }
+  class MyEndschema extends Liquid.Tag {
+    render () { return ' --> </div>' }
+  }
+
+  Engine.registerTag('form', MyForm)
+  Engine.registerTag('endform', MyEndform)
+  Engine.registerTag('schema', MySchema)
+  Engine.registerTag('endschema', MyEndschema)
+  // 添加标签
 
 	let templateData = {};
 

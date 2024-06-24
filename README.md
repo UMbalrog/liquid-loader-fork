@@ -1,4 +1,4 @@
-# Liquid Loader
+# Liquid Loader Fork
 
 Liquid template engine for Webpack loader.
 
@@ -7,7 +7,7 @@ Liquid Templating language (see http://github.com/shopify/liquid)
 ## Install
 
 ```
-npm install --save-dev liquid-loader
+npm install --save-dev liquid-loader-fork
 ```
 
 ## Loader options
@@ -36,7 +36,7 @@ module.exports = {
             use: [{
                 loader: "html-loader"
             }, {
-                loader: "liquid-loader",
+                loader: "liquid-loader-fork",
                 options: {
                     data: {
                         dev_evn: NODE_ENV == 'development'
@@ -87,7 +87,7 @@ module.exports = {
             use: [{
                 loader: "html-loader"
             }, {
-                loader: "liquid-loader",
+                loader: "liquid-loader-fork",
                 options: {
                     data: (resourcePath) => {
                         const myTemplateData = /* Get my template data based on the resourcePath (see examples below) */
